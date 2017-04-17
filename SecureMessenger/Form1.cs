@@ -226,7 +226,7 @@ namespace SecureMessenger
         /// <summary>
         /// Sets up the encryption algorithim DES by hashing the password using MD5
         /// Then Uses the first 8 bytes for the key and the last 8 bytes for the IV
-        /// DES uses CBC mode in c#.net with PKS7 padding by default
+        /// DES uses CBC mode in c#.net padding mode set to zeros
         /// </summary>
         public void setUpEncryption()
         {
